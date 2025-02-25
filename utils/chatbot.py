@@ -70,7 +70,7 @@ def create_conversation_chain(vectorstore):
 
     conversation_chain = ConversationalRetrievalChain.from_llm(
         model_Gemini,
-        retriever = vectorstore.as_retriever(),
+        retriever = vectorstore.as_retriever(), # Buscador de tudo que é mais proximo
         memory = memory
     )
     return conversation_chain
