@@ -32,6 +32,7 @@ pip install -r requirements.txt
 
 # Inicie o chatbot e abra no navegador
 poetry run Streamlit run app.py #Linux/macOS
+```
 
 # Adicione os PDFs de sentenças e aperte e processar
 ## Captura de Tela 1 📸
