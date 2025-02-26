@@ -18,9 +18,9 @@ def process_files(files):
 def creat_text_chunks(text):
 
     text_splitter = CharacterTextSplitter(
-        separator ='\n',
-        chunk_size = 1500 ,
-        chunk_overlap = 300,
+        separator ='\n',        # Caractere usado para dividir os textos
+        chunk_size = 1000 ,     # Descrevem o tamanho máximo que um único pedaço de chunk pode ter
+        chunk_overlap = 100,    # Determina a quantidade de sobreposição que deve existir entre dois chunks consecutivos.
         length_function = len
     )
 

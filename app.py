@@ -11,7 +11,7 @@ def main():
     )
 
     st.header('Chat PDF TRE-RN - Sentenças')
-    user_question = st.text_input("Faça uma pergunta para mim!")
+    user_question = st.text_input("Pergunte alguma coisa", placeholder="Escreva aqui...")
 
     if('conversation' not in st.session_state): # Armazen as variáveis dentro de um estado de sessão
         st.session_state.conversation = None
