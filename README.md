@@ -34,12 +34,16 @@ pip install -r requirements.txt
 poetry run Streamlit run app.py #Linux/macOS
 
 # Adicione os PDFs de sentenças e aperte e processar
-![print da interface do projeto](/home/arthur_silva/Projetos_tre2024/projeto_Open_Langchain_Streamlit_RAG/utils/img/img1.PNG)
+## Captura de Tela 1 📸
+![Adicionando os PDFs](utils/img/img1.PNG)
 
 # Interaja com o chatbot via UI web.
--------------------
+## Captura de Tela 2 📸
+![Interajindo com o chatbot](utils/img/img2.PNG)
 
-📊 Arquitetura do Projeto
+
+## 📊 Arquitetura do Projeto
+
 Pré-processamento: Extração de texto dos PDFs.
 Indexação: Vetorização dos documentos com embeddings + FAISS.
 Geração de Respostas: Modelo LLMs (*gemini-1.5-flash*) aprimorado com RAG.
