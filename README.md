@@ -41,16 +41,6 @@ pip install -r requirements.txt
 streamlit run app.py #Linux/macOS
 ```
 
-## Interaja com o chatbot via UI web.
-
-# Captura de Tela 1 📸
-![Adicionando os PDFs](image/img1.PNG)
-
-
-# Captura de Tela 2 📸
-![Interajindo com o chatbot](./image/img2.png)
-
-
 ## Configurando Credenciais Google Cloud para Gemini (Google Generative AI)
 
 Este guia explica como criar e baixar o arquivo **JSON de credenciais** para usar a API do modelo **Gemini** da Google Cloud em projetos de RAG (Retrieval-Augmented Generation).
