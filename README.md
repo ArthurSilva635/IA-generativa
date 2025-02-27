@@ -54,9 +54,9 @@ Interface: Streamlit para interação com usuários.
 
 Este guia explica como criar e baixar o arquivo **JSON de credenciais** para usar a API do modelo **Gemini** da Google Cloud em projetos de RAG (Retrieval-Augmented Generation).
 
-## 🚀 Passo a Passo
+# 🚀 Passo a Passo
 
-### 1. Criar o Projeto no Google Cloud
+## 1. Criar o Projeto no Google Cloud
 1. Acesse o console: [Google Cloud Console](https://console.cloud.google.com/)
 2. Faça login com sua conta Google.
 3. Vá para **Console** → **Criar Projeto**.
@@ -67,14 +67,14 @@ Este guia explica como criar e baixar o arquivo **JSON de credenciais** para usa
 
 ---
 
-### 2. Ativar a API do Gemini (Google Generative AI)
+## 2. Ativar a API do Gemini (Google Generative AI)
 1. No menu lateral, vá para **APIs e serviços** → **Biblioteca**.
 2. Pesquise por **Generative Language API**.
 3. Clique em **Ativar API**.
 
 ---
 
-### 3. Criar a Conta de Serviço
+## 3. Criar a Conta de Serviço
 1. Vá para **APIs e serviços** → **Credenciais**.
 2. Clique em **Criar Credenciais** → **Conta de Serviço**.
 3. Preencha:
@@ -87,7 +87,7 @@ Este guia explica como criar e baixar o arquivo **JSON de credenciais** para usa
 
 ---
 
-### 4. Gerar o JSON de Credenciais
+## 4. Gerar o JSON de Credenciais
 1. Vá para **APIs e serviços** → **Credenciais**.
 2. Clique na conta de serviço criada.
 3. Vá para a aba **Chaves**.
@@ -99,44 +99,9 @@ O arquivo **credentials.json** será baixado automaticamente para seu computador
 
 ---
 
-### 5. Configurar no Código Python
+## 5. Configurar no Código Python
 No seu projeto, adicione o arquivo **credentials.json** na raiz.
 
-#### Exemplo de Código:
-```python
-import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "credentials.json"
-
-import google.generativeai as genai
-
-genai.configure(api_key="SUA_API_KEY")
-model = genai.GenerativeModel("gemini-pro")
-response = model.generate_content("Olá, Gemini!")
-print(response.text)
-```
-
 ---
-
-### 📌 Estrutura Final do Projeto
-```
-📂 meu_projeto_rag
-├─ app.py
-├─ credentials.json
-└─ requirements.txt
-```
-
----
-
-### ⚠️ Segurança
-Não compartilhe o arquivo **credentials.json** publicamente ou em repositórios Git. Adicione ele no **.gitignore**.
-
----
-
-### DICA EXTRA 🔥
-Para projetos em produção, use variáveis de ambiente em vez de deixar o caminho fixo no código.
-
-```bash
-export GOOGLE_APPLICATION_CREDENTIALS="/caminho/para/credentials.json"
-```
 
 
