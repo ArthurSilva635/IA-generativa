@@ -59,5 +59,4 @@ faiss_index/
 
 # Pastas de Upload
 uploads/
-temp/
-
+temp/credentials.json
