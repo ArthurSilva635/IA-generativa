@@ -49,7 +49,7 @@ def create_vectorstore(chunks):
 
 def create_conversation_chain(vectorstore):
     model_Gemini = ChatGoogleGenerativeAI(
-        model= "gemini-1.5-flash",
+        model= "gemini-2.0-flash",
         temperature=0.2,
     )
     memory = ConversationBufferMemory(memory_key='chat_history', return_messages= True)

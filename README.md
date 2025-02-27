@@ -51,7 +51,7 @@ streamlit run app.py #Linux/macOS
 ![Interajindo com o chatbot](image/img1.PNG)
 
 
-# Configurando Credenciais Google Cloud para Gemini (Google Generative AI)
+## Configurando Credenciais Google Cloud para Gemini (Google Generative AI)
 
 Este guia explica como criar e baixar o arquivo **JSON de credenciais** para usar a API do modelo **Gemini** da Google Cloud em projetos de RAG (Retrieval-Augmented Generation).
 

@@ -21,8 +21,8 @@ def process_files(files):
 def create_text_chunks(text):
     text_splitter = CharacterTextSplitter(
         separator = '\n',       # Caractere usado para dividir os textos
-        chunk_size = 1000,      # Descrevem o tamanho máximo que um único pedaço de chunk pode ter
-        chunk_overlap = 200,    # Quantidade de caracteres que sobrepos um chunck de outro
+        chunk_size = 8000,      # Descrevem o tamanho máximo que um único pedaço de chunk pode ter
+        chunk_overlap = 1000,    # Quantidade de caracteres que sobrepos um chunck de outro
         length_function = len
     )
     chunks = text_splitter.split_text(text)
