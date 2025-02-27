@@ -11,6 +11,13 @@ Um chatbot baseado em *Deep Learning* e *Generative AI* com *Retrieval-Augmented
 - **Busca Inteligente**: FAISS 
 - **APIs de Chatbot**: LangChain / Gemini API  
 
+## 📊 Arquitetura do Projeto
+
+- **Pré-processamento**: Extração de texto dos PDFs.
+- **Indexação**: Vetorização dos documentos com embeddings + FAISS.
+- **Geração de Respostas**: Modelo LLMs (*gemini-1.5-flash*) aprimorado com RAG.
+- **Interface**: Streamlit para interação com usuários.
+
 ## 📦 Instalação
 
 Siga os passos abaixo para configurar o ambiente:
@@ -31,24 +38,18 @@ venv\Scripts\activate  # Windows
 pip install -r requirements.txt
 
 # Inicie o chatbot e abra no navegador
-poetry run Streamlit run app.py #Linux/macOS
+streamlit run app.py #Linux/macOS
 ```
 
-# Adicione os PDFs de sentenças e aperte e processar
-## Captura de Tela 1 📸
-![Adicionando os PDFs](utils/img/img2.PNG)
+## Interaja com o chatbot via UI web.
 
-# Interaja com o chatbot via UI web.
-## Captura de Tela 2 📸
-![Interajindo com o chatbot](utils/img/img1.PNG)
+# Captura de Tela 1 📸
+![Adicionando os PDFs](image/img2.PNG)
 
 
-## 📊 Arquitetura do Projeto
+# Captura de Tela 2 📸
+![Interajindo com o chatbot](image/img1.PNG)
 
-Pré-processamento: Extração de texto dos PDFs.
-Indexação: Vetorização dos documentos com embeddings + FAISS.
-Geração de Respostas: Modelo LLMs (*gemini-1.5-flash*) aprimorado com RAG.
-Interface: Streamlit para interação com usuários.
 
 # Configurando Credenciais Google Cloud para Gemini (Google Generative AI)
 
