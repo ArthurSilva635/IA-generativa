@@ -44,11 +44,11 @@ streamlit run app.py #Linux/macOS
 ## Interaja com o chatbot via UI web.
 
 # Captura de Tela 1 📸
-![Adicionando os PDFs](/image/img1.png)
+![Adicionando os PDFs](image/img1.png)
 
 
 # Captura de Tela 2 📸
-![Interajindo com o chatbot](/image/img2.png)
+![Interajindo com o chatbot](image/img2.png)
 
 
 ## Configurando Credenciais Google Cloud para Gemini (Google Generative AI)
