@@ -44,7 +44,7 @@ streamlit run app.py #Linux/macOS
 ## Interaja com o chatbot via UI web.
 
 # Captura de Tela 1 📸
-![Adicionando os PDFs](./image/img1.PNG)
+![Adicionando os PDFs](image/img1.PNG)
 
 
 # Captura de Tela 2 📸
